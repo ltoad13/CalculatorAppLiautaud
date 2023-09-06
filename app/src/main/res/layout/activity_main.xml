@@ -12,8 +12,9 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginEnd="@dimen/margin_start_edge"
         android:background="@drawable/round_button"
-        android:text="Button"
+        android:text="4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -22,6 +23,7 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginEnd="@dimen/margin_start_middle"
         android:background="@drawable/round_button"
         android:text="2"
         app:layout_constraintEnd_toStartOf="@+id/button"
@@ -32,11 +34,12 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="@dimen/margin_start_edge"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginEnd="@dimen/margin_start_middle"
         android:background="@drawable/round_button"
         android:text="1"
         app:layout_constraintEnd_toStartOf="@+id/button20"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.112"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -45,8 +48,9 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginEnd="@dimen/margin_start_middle"
         android:background="@drawable/round_button"
-        android:text="Button"
+        android:text="3"
         app:layout_constraintEnd_toStartOf="@+id/button32"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -56,7 +60,7 @@
         android:layout_height="46dp"
         android:layout_marginStart="@dimen/margin_start_edge"
         android:layout_marginTop="@dimen/margin_top"
-        android:text="TextView"
+        android:text="answer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
