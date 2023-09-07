@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name ="LizzyButtons" parent="Widget.Material3.Button">
+        <item name="android:padding">@dimen/pad_button</item>
+        <item name="android:layout_width">@dimen/short_width</item>
+        <item name="android:layout_height">@dimen/height</item>
+        <item name="android:layout_marginStart">@dimen/margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/margin_end</item>
+        <item name="android:layout_marginTop">@dimen/margin_top</item>
+        <item name="android:backgroundTint">@color/md_theme_light_primary</item>
+    </style>
+
+    <style name ="LizzyButtonsLong" parent="LizzyButtons">
+        <item name="android:layout_width">@dimen/long_width</item>
+        <item name="android:backgroundTint">@color/md_theme_dark_outline</item>
+    </style>
+
+    <style name ="LizzyButtonsNumber" parent="LizzyButtons">
+        <item name="android:backgroundTint">@color/md_theme_light_outline</item>
+    </style>
+
+    <style name ="LizzyButtonsSideCommands" parent="LizzyButtons">
+        <item name="android:backgroundTint">@color/md_theme_light_onSurfaceVariant</item>
+    </style>
+
+
+
+</resources>

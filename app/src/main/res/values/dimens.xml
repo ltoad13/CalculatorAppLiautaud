@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="pad_button">55dp</dimen>
-    <dimen name="pad_button_horiz">55dp</dimen>
-    <dimen name="margin_start_edge">15dp</dimen>
-    <dimen name="margin_start_middle">40dp</dimen>
+    <dimen name="pad_button">15dp</dimen>
+    <dimen name="margin_start">20dp</dimen>
+    <dimen name="margin_end">20dp</dimen>
     <dimen name="margin_top">45dp</dimen>
-
+    <dimen name="long_width">200dp</dimen>
+    <dimen name="short_width">83dp</dimen>
+    <dimen name="height">90dp</dimen>
 </resources>
