@@ -8,16 +8,18 @@
 
     <RelativeLayout
         android:id="@+id/RelativeLayout1"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="600dp"
         android:gravity="center"
+
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <TableLayout
             android:id="@+id/tableLayout1"
-            android:layout_width="fill_parent"
+            android:layout_width="350dp"
+
             android:layout_height="fill_parent">
 
             <TableRow
@@ -153,6 +155,7 @@
                     android:text="3"
                     tools:layout_editor_absoluteX="-15dp"
                     tools:layout_editor_absoluteY="634dp" />
+
                 <Button
                     android:id="@+id/plus"
                     style="@style/LizzyButtonsSideCommands"
@@ -174,6 +177,7 @@
                     style="@style/LizzyButtonsLong"
                     android:layout_width="match_parent"
                     android:text="0" />
+
                 <Button
                     android:id="@+id/decimal"
                     style="@style/LizzyButtonsNumber"
@@ -201,8 +205,13 @@
         android:layout_height="@dimen/height"
         android:layout_marginStart="@dimen/margin_start"
         android:layout_marginTop="@dimen/margin_top"
+        android:background="@color/md_theme_dark_onPrimaryContainer"
+        android:backgroundTint="@color/md_theme_dark_inverseSurface"
         android:paddingStart="@dimen/pad_start_text"
         android:paddingTop="@dimen/pad_button_top_text"
+        android:shadowColor="@color/md_theme_light_onBackground"
+        android:shadowDx="15"
+        android:shadowDy="20"
         android:text="answer"
         android:textSize="35sp"
         app:layout_constraintStart_toStartOf="parent"
