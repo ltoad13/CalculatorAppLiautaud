@@ -6,158 +6,206 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="600dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <Button
-        android:id="@+id/three"
-        style="@style/LizzyButtonsNumber"
-        android:text="3"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp"
-         />
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
-    <Button
-        android:id="@+id/minus"
-        style="@style/LizzyButtonsSideCommands"
-        android:text="-"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp"
-        />
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3">
 
-    <Button
-        android:id="@+id/equals"
-        style="@style/LizzyButtonsSideCommands"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="92dp"
-        android:text="="
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp"
-         />
+                <Button
+                    android:id="@+id/clear"
+                    style="@style/LizzyButtons"
+                    android:text="AC"
+                    tools:layout_editor_absoluteX="-11dp"
+                    tools:layout_editor_absoluteY="167dp" />
 
-    <Button
-        android:id="@+id/nine"
-        style="@style/LizzyButtonsNumber"
+                <Button
+                    android:id="@+id/plus_minus"
+                    style="@style/LizzyButtons"
+                    android:text="+/-"
+                    tools:layout_editor_absoluteX="89dp"
+                    tools:layout_editor_absoluteY="138dp" />
 
-        android:text="9"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp"
-        />
+                <Button
+                    android:id="@+id/percent"
+                    style="@style/LizzyButtons"
+                    android:text="%"
+                    tools:layout_editor_absoluteX="61dp"
+                    tools:layout_editor_absoluteY="240dp" />
 
-    <Button
-        android:id="@+id/plus"
-        style="@style/LizzyButtonsSideCommands"
+                <Button
+                    android:id="@+id/divide"
+                    style="@style/LizzyButtonsSideCommands"
+                    android:text="9"
+                    tools:layout_editor_absoluteX="191dp"
+                    tools:layout_editor_absoluteY="303dp" />
+            </TableRow>
 
-        android:text="+"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp"
-         />
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3">
 
-    <Button
-        android:id="@+id/decimal"
-        style="@style/LizzyButtonsNumber"
+                <Button
+                    android:id="@+id/seven"
+                    style="@style/LizzyButtonsNumber"
+                    android:text="7"
+                    tools:layout_editor_absoluteX="180dp"
+                    tools:layout_editor_absoluteY="31dp" />
 
-        android:text="."
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp"
-         />
+                <Button
+                    android:id="@+id/eight"
+                    style="@style/LizzyButtonsNumber"
+                    android:text="8"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="449dp" />
 
-    <Button
-        android:id="@+id/five"
-        style="@style/LizzyButtonsNumber"
+                <Button
+                    android:id="@+id/nine"
+                    style="@style/LizzyButtonsNumber"
 
-        android:text="5"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp"
-         />
+                    android:text="9"
+                    tools:layout_editor_absoluteX="50dp"
+                    tools:layout_editor_absoluteY="60dp" />
 
-    <Button
-        android:id="@+id/two"
-        style="@style/LizzyButtonsNumber"
-        android:text="2"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp"
-         />
+                <Button
+                    android:id="@+id/times"
+                    style="@style/LizzyButtonsSideCommands"
+                    android:text="x"
+                    tools:layout_editor_absoluteX="72dp"
+                    tools:layout_editor_absoluteY="188dp" />
+            </TableRow>
 
-    <Button
-        android:id="@+id/eight"
-        style="@style/LizzyButtonsNumber"
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3">
 
-        android:text="8"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp"
-         />
+                <Button
+                    android:id="@+id/four"
+                    style="@style/LizzyButtonsNumber"
+                    android:text="4"
+                    tools:layout_editor_absoluteX="164dp"
+                    tools:layout_editor_absoluteY="507dp" />
 
-    <Button
-        android:id="@+id/six"
-        style="@style/LizzyButtonsNumber"
-        android:text="6"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp"
-        />
+                <Button
+                    android:id="@+id/five"
+                    style="@style/LizzyButtonsNumber"
+                    android:layout_width="57dp"
+                    android:text="5"
+                    tools:layout_editor_absoluteX="312dp"
+                    tools:layout_editor_absoluteY="610dp" />
 
-    <Button
-        android:id="@+id/times"
-        style="@style/LizzyButtonsSideCommands"
-        android:text="X"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp"
-         />
+                <Button
+                    android:id="@+id/six"
+                    style="@style/LizzyButtonsNumber"
+                    android:text="6"
+                    tools:layout_editor_absoluteX="312dp"
+                    tools:layout_editor_absoluteY="610dp" />
 
-    <Button
-        android:id="@+id/four"
-        style="@style/LizzyButtonsNumber"
-        android:text="4"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp" />
+                <Button
+                    android:id="@+id/minus"
+                    style="@style/LizzyButtonsSideCommands"
+                    android:text="-"
+                    tools:layout_editor_absoluteX="250dp"
+                    tools:layout_editor_absoluteY="150dp" />
+            </TableRow>
 
-    <Button
-        android:id="@+id/seven"
-        style="@style/LizzyButtonsNumber"
-        android:text="7"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp" />
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3">
 
-    <Button
-        android:id="@+id/divide"
-        style="@style/LizzyButtonsSideCommands"
-        android:text="/"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp" />
+                <Button
+                    android:id="@+id/one"
+                    style="@style/LizzyButtonsNumber"
+                    android:text="1"
+                    tools:layout_editor_absoluteX="274dp"
+                    tools:layout_editor_absoluteY="303dp" />
 
-    <Button
-        android:id="@+id/zero"
-        style="@style/LizzyButtonsLong"
-        android:text="0"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="103dp" />
+                <Button
+                    android:id="@+id/two"
+                    style="@style/LizzyButtonsNumber"
+                    android:text="2"
+                    tools:layout_editor_absoluteX="50dp"
+                    tools:layout_editor_absoluteY="278dp" />
 
-    <Button
-        android:id="@+id/percent"
-        style="@style/LizzyButtons"
-        android:text="%"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp" />
+                <Button
+                    android:id="@+id/three"
+                    style="@style/LizzyButtonsNumber"
+                    android:text="3"
+                    tools:layout_editor_absoluteX="-15dp"
+                    tools:layout_editor_absoluteY="634dp" />
+                <Button
+                    android:id="@+id/plus"
+                    style="@style/LizzyButtonsSideCommands"
+                    android:layout_width="wrap_content"
+                    android:text="+"
+                    tools:layout_editor_absoluteX="83dp"
+                    tools:layout_editor_absoluteY="368dp" />
 
-    <Button
-        android:id="@+id/one"
-        style="@style/LizzyButtonsNumber"
+            </TableRow>
 
-        android:text="1"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp" />
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
 
-    <Button
-        android:id="@+id/clear"
-        style="@style/LizzyButtons"
-        android:text="AC"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="121dp" />
+                <Button
+                    android:id="@+id/zero"
+                    style="@style/LizzyButtonsLong"
+                    android:layout_width="match_parent"
+                    android:text="0" />
+                <Button
+                    android:id="@+id/decimal"
+                    style="@style/LizzyButtonsNumber"
+
+                    android:text="."
+                    tools:layout_editor_absoluteX="250dp"
+                    tools:layout_editor_absoluteY="417dp" />
+
+                <Button
+                    android:id="@+id/equals"
+                    style="@style/LizzyButtonsSideCommands"
+                    android:text="="
+                    tools:layout_editor_absoluteX="155dp"
+                    tools:layout_editor_absoluteY="86dp" />
 
 
-    <Button
-        android:id="@+id/plusminus"
-        style="@style/LizzyButtons"
-        android:text="+ / -"
-        tools:layout_editor_absoluteX="363dp"
-        tools:layout_editor_absoluteY="149dp" />
+            </TableRow>
+
+        </TableLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="@dimen/ultralong_width"
+        android:layout_height="@dimen/height"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="@dimen/margin_top"
+        android:paddingStart="@dimen/pad_start_text"
+        android:paddingTop="@dimen/pad_button_top_text"
+        android:text="answer"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
