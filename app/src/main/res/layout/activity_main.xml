@@ -18,9 +18,9 @@
 
         <TableLayout
             android:id="@+id/tableLayout1"
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
 
-            android:layout_height="fill_parent">
+            android:layout_height="match_parent">
 
             <TableRow
                 android:id="@+id/tableRow1"
@@ -52,15 +52,15 @@
                 <Button
                     android:id="@+id/divide"
                     style="@style/LizzyButtonsSideCommands"
-                    android:text="9"
+                    android:text="/"
                     tools:layout_editor_absoluteX="191dp"
                     tools:layout_editor_absoluteY="303dp" />
             </TableRow>
 
             <TableRow
                 android:id="@+id/tableRow2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="0.3">
 
                 <Button
@@ -95,8 +95,8 @@
 
             <TableRow
                 android:id="@+id/tableRow3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="0.3">
 
                 <Button
@@ -131,8 +131,8 @@
 
             <TableRow
                 android:id="@+id/tableRow4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="0.3">
 
                 <Button
@@ -203,8 +203,8 @@
         android:id="@+id/answer"
         android:layout_width="@dimen/ultralong_width"
         android:layout_height="@dimen/height"
-        android:layout_marginStart="@dimen/margin_start"
-        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginStart="@dimen/marginstart_long"
+        android:layout_marginTop="@dimen/margin_top_text"
         android:background="@color/md_theme_dark_onPrimaryContainer"
         android:backgroundTint="@color/md_theme_dark_inverseSurface"
         android:paddingStart="@dimen/pad_start_text"
