@@ -30,62 +30,85 @@ public class MainActivity extends AppCompatActivity {
         else if (V.getId() == R.id.clear) {
             Log.i("Lizzy", "Selected clear");
             answer.setText(" ");
+            operations = "";
         }
         else if (V.getId() == R.id.decimal) {
             Log.i("Lizzy", "Selected decimal");
+            operations += ".";
+            answer.setText(operations);
 
         }
         else if (V.getId() == R.id.divide) {
             Log.i("Lizzy", "Selected divide");
+            operations += "/";
+            answer.setText(operations);
 
         }
         else if (V.getId() == R.id.minus) {
             Log.i("Lizzy", "Selected minus");
-
+            operations += "-";
+            answer.setText(operations);
         }
         else if (V.getId() == R.id.percent) {
             Log.i("Lizzy", "Selected percent");
-
+            operations += "%";
+            answer.setText(operations);
         }
         else if (V.getId() == R.id.nine) {
             Log.i("Lizzy", "Selected nine");
-
+            operations += "9";
+            answer.setText(operations);
         }
         else if (V.getId() == R.id.eight) {
             Log.i("Lizzy", "Selected 8");
+            operations += "8";
+            answer.setText(operations);
 
         }
         else if (V.getId() == R.id.seven) {
             Log.i("Lizzy", "Selected 7");
+            operations += "7";
+            answer.setText(operations);
 
         }
         else if (V.getId() == R.id.six) {
             Log.i("Lizzy", "Selected 6");
+            operations += "6";
+            answer.setText(operations);
 
         }
         else if (V.getId() == R.id.five) {
             Log.i("Lizzy", "Selected 5");
+            operations += "5";
+            answer.setText(operations);
 
         }
         else if (V.getId() == R.id.four) {
             Log.i("Lizzy", "Selected 4");
+            operations += "4";
+            answer.setText(operations);
 
         }
         else if (V.getId() == R.id.three) {
             Log.i("Lizzy", "Selected 3");
+            operations += "3";
+            answer.setText(operations);
 
         }
         else if (V.getId() == R.id.two) {
             Log.i("Lizzy", "Selected 2");
+            operations += "2";
+            answer.setText(operations);
 
         }
         else if (V.getId() == R.id.one) {
             Log.i("Lizzy", "Selected 1");
-
+            operations += "1";
+            answer.setText(operations);
         }
     }
     //calculate string
     public double performOperation(String s){
-
+        
     }
 }
