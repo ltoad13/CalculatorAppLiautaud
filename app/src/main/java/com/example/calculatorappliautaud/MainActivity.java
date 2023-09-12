@@ -1,5 +1,7 @@
 package com.example.calculatorappliautaud;
 
+import static java.lang.Double.parseDouble;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         if (V.getId()== R.id.equals){
             Log.i("Lizzy", "Selected answer");
             answer.setText("" + performOperation(operations));
-            operations = "";
+            operations = "" + performOperation(operations);
         }
         else if (V.getId() == R.id.clear) {
             Log.i("Lizzy", "Selected clear");
@@ -109,6 +111,32 @@ public class MainActivity extends AppCompatActivity {
     }
     //calculate string
     public double performOperation(String s){
-        
+        //first run a loop to find the first number
+        //then find the operator and convert it to its equivalent
+        //then find the next number
+        //the find the next operator
+        //then keep doing this for the whole string
+        double finalAnswer = 0;
+        double nextNumber = 0;
+        char curOperator;
+        int i = 0;
+        while(isNumeric(s.substring(0, i+1)) && i < s.length() - 1){
+            finalAnswer = parseDouble(s.substring(0, i +1));
+            i++;
+        }
+        curOperator = s.charAt(i + 1);
+        if(curOperator == '/'{
+            //idek what to do
+        }
+
+    }
+
+    public boolean isNumeric(String s) {
+        if(s.matches("-?\\d+(\\.\\d+)?")){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }
