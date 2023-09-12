@@ -124,9 +124,14 @@ public class MainActivity extends AppCompatActivity {
             finalAnswer = parseDouble(s.substring(0, i +1));
             i++;
         }
+        int j = i + 2;
+        while(isNumeric(s.substring(j)) && j < s.length() - 1){
+            nextNumber = parseDouble(s.substring(j));
+            j++;
+        }
         curOperator = s.charAt(i + 1);
-        if(curOperator == '/'{
-            //idek what to do
+        if(curOperator == '/'){
+            finalAnswer /= nextNumber;
         }
 
     }
