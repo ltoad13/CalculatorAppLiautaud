@@ -8,6 +8,9 @@
         <item name="android:layout_marginEnd">@dimen/margin_end</item>
         <item name="android:layout_marginTop">@dimen/margin_top</item>
         <item name="android:backgroundTint">@color/md_theme_light_primary</item>
+        <item name="android:onClick">numSelected</item>
+        <item name="fontFamily">serif-monospace-medium</item>
+        <item name="android:textSize">30dp</item>
     </style>
 
     <style name ="LizzyButtonsLong" parent="LizzyButtons">

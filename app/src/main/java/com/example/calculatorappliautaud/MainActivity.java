@@ -17,14 +17,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    double startNum;
-
-    String operations;
+    String operations = "";
     public void numSelected(View V) {
         TextView answer = findViewById(R.id.answer);
         //when you click on a button that operation is added to the string and at the end that
         // string is evaluated
-        if (V.getId()== R.id.equals){
+        if (V.getId() == R.id.equals){
             Log.i("Lizzy", "Selected answer");
             answer.setText("" + performOperation(operations));
             operations = "" + performOperation(operations);
@@ -43,6 +41,18 @@ public class MainActivity extends AppCompatActivity {
         else if (V.getId() == R.id.divide) {
             Log.i("Lizzy", "Selected divide");
             operations += "/";
+            answer.setText(operations);
+
+        }
+        else if (V.getId() == R.id.times) {
+            Log.i("Lizzy", "Selected divide");
+            operations += "x";
+            answer.setText(operations);
+
+        }
+        else if (V.getId() == R.id.plus) {
+            Log.i("Lizzy", "Selected divide");
+            operations += "+";
             answer.setText(operations);
 
         }
@@ -108,6 +118,11 @@ public class MainActivity extends AppCompatActivity {
             operations += "1";
             answer.setText(operations);
         }
+        else if (V.getId() == R.id.zero) {
+            Log.i("Lizzy", "Selected 0");
+            operations += "0";
+            answer.setText(operations);
+        }
     }
     //calculate string
     public double performOperation(String s){
@@ -120,28 +135,72 @@ public class MainActivity extends AppCompatActivity {
         double nextNumber = 0;
         char curOperator;
         int i = 0;
-        while(isNumeric(s.substring(0, i+1)) && i < s.length() - 1){
-            finalAnswer = parseDouble(s.substring(0, i +1));
+        while(isNumeric(s.substring(0, i +1)) && i < s.length() - 1){
+            finalAnswer = parseDouble(s.substring(i, i +1));
             i++;
         }
-        int j = i + 2;
-        while(isNumeric(s.substring(j)) && j < s.length() - 1){
-            nextNumber = parseDouble(s.substring(j));
-            j++;
+        curOperator = s.charAt(i);
+
+        //from the next character after the last num at index i, so i + 2, to the index + j
+        if(isNumeric(s.substring(i + 1))){
+            nextNumber = parseDouble(s.substring(i + 1));
+            if(curOperator == '/'){
+                finalAnswer = finalAnswer / nextNumber;
+            }
+            else if(curOperator == '-'){
+                finalAnswer = finalAnswer - nextNumber;
+            }
+            else if(curOperator == '+'){
+                finalAnswer = finalAnswer + nextNumber;
+            }
+            else if(curOperator == 'x'){
+                finalAnswer = finalAnswer * nextNumber;
+            }
+            else if(curOperator == '%'){
+                finalAnswer = finalAnswer % nextNumber;
+            }
         }
-        curOperator = s.charAt(i + 1);
-        if(curOperator == '/'){
-            finalAnswer /= nextNumber;
+        else {
+            int j = i + 2;
+            while (isNumeric(s.substring(i + 1, j)) && j < s.length() - 1) {
+                nextNumber = parseDouble(s.substring(i + 2, j));
+                j++;
+            }
+            if(curOperator == '/'){
+                finalAnswer = finalAnswer / nextNumber;
+            }
+            else if(curOperator == '-'){
+                finalAnswer = finalAnswer - nextNumber;
+            }
+            else if(curOperator == '+'){
+                finalAnswer = finalAnswer + nextNumber;
+            }
+            else if(curOperator == 'x'){
+                finalAnswer = finalAnswer * nextNumber;
+            }
         }
 
+        return finalAnswer;
+
     }
+
 
     public boolean isNumeric(String s) {
-        if(s.matches("-?\\d+(\\.\\d+)?")){
-            return true;
-        }
-        else{
+        if (s == null) {
             return false;
         }
-    }
+        if(s.charAt(s.length() - 1) == '.') {
+            return true;
+        }
+        try {
+            double d = Double.parseDouble(s);
+        } catch (NumberFormatException nfe) {
+            return false;
+        }
+        return true;
+        //documentation: https://www.baeldung.com/java-check-string-number
+        // This uses a try-catch block to see if a number is parseable and, therefore, numeric
+        //However, at the time of submission this is not working and crashes the app, do not know why,
+        //I have tried other ways to check if a string is numeric with decimals and also crashed
+    }//
 }

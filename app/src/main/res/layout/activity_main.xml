@@ -31,28 +31,21 @@
                 <Button
                     android:id="@+id/clear"
                     style="@style/LizzyButtons"
-                    android:text="AC"
+                    android:text="@string/clear"
                     tools:layout_editor_absoluteX="-11dp"
                     tools:layout_editor_absoluteY="167dp" />
 
                 <Button
-                    android:id="@+id/plus_minus"
-                    style="@style/LizzyButtons"
-                    android:text="+/-"
-                    tools:layout_editor_absoluteX="89dp"
-                    tools:layout_editor_absoluteY="138dp" />
-
-                <Button
                     android:id="@+id/percent"
                     style="@style/LizzyButtons"
-                    android:text="%"
+                    android:text="@string/percent"
                     tools:layout_editor_absoluteX="61dp"
                     tools:layout_editor_absoluteY="240dp" />
 
                 <Button
                     android:id="@+id/divide"
                     style="@style/LizzyButtonsSideCommands"
-                    android:text="/"
+                    android:text="@string/divide"
                     tools:layout_editor_absoluteX="191dp"
                     tools:layout_editor_absoluteY="303dp" />
             </TableRow>
@@ -66,14 +59,14 @@
                 <Button
                     android:id="@+id/seven"
                     style="@style/LizzyButtonsNumber"
-                    android:text="7"
+                    android:text="@string/seven"
                     tools:layout_editor_absoluteX="180dp"
                     tools:layout_editor_absoluteY="31dp" />
 
                 <Button
                     android:id="@+id/eight"
                     style="@style/LizzyButtonsNumber"
-                    android:text="8"
+                    android:text="@string/eight"
                     tools:layout_editor_absoluteX="36dp"
                     tools:layout_editor_absoluteY="449dp" />
 
@@ -81,14 +74,14 @@
                     android:id="@+id/nine"
                     style="@style/LizzyButtonsNumber"
 
-                    android:text="9"
+                    android:text="@string/nine"
                     tools:layout_editor_absoluteX="50dp"
                     tools:layout_editor_absoluteY="60dp" />
 
                 <Button
                     android:id="@+id/times"
                     style="@style/LizzyButtonsSideCommands"
-                    android:text="x"
+                    android:text="@string/times"
                     tools:layout_editor_absoluteX="72dp"
                     tools:layout_editor_absoluteY="188dp" />
             </TableRow>
@@ -102,7 +95,7 @@
                 <Button
                     android:id="@+id/four"
                     style="@style/LizzyButtonsNumber"
-                    android:text="4"
+                    android:text="@string/four"
                     tools:layout_editor_absoluteX="164dp"
                     tools:layout_editor_absoluteY="507dp" />
 
@@ -110,21 +103,21 @@
                     android:id="@+id/five"
                     style="@style/LizzyButtonsNumber"
                     android:layout_width="57dp"
-                    android:text="5"
+                    android:text="@string/five"
                     tools:layout_editor_absoluteX="312dp"
                     tools:layout_editor_absoluteY="610dp" />
 
                 <Button
                     android:id="@+id/six"
                     style="@style/LizzyButtonsNumber"
-                    android:text="6"
+                    android:text="@string/six"
                     tools:layout_editor_absoluteX="312dp"
                     tools:layout_editor_absoluteY="610dp" />
 
                 <Button
                     android:id="@+id/minus"
                     style="@style/LizzyButtonsSideCommands"
-                    android:text="-"
+                    android:text="@string/minus"
                     tools:layout_editor_absoluteX="250dp"
                     tools:layout_editor_absoluteY="150dp" />
             </TableRow>
@@ -138,21 +131,21 @@
                 <Button
                     android:id="@+id/one"
                     style="@style/LizzyButtonsNumber"
-                    android:text="1"
+                    android:text="@string/one"
                     tools:layout_editor_absoluteX="274dp"
                     tools:layout_editor_absoluteY="303dp" />
 
                 <Button
                     android:id="@+id/two"
                     style="@style/LizzyButtonsNumber"
-                    android:text="2"
+                    android:text="@string/two"
                     tools:layout_editor_absoluteX="50dp"
                     tools:layout_editor_absoluteY="278dp" />
 
                 <Button
                     android:id="@+id/three"
                     style="@style/LizzyButtonsNumber"
-                    android:text="3"
+                    android:text="@string/three"
                     tools:layout_editor_absoluteX="-15dp"
                     tools:layout_editor_absoluteY="634dp" />
 
@@ -160,7 +153,7 @@
                     android:id="@+id/plus"
                     style="@style/LizzyButtonsSideCommands"
                     android:layout_width="wrap_content"
-                    android:text="+"
+                    android:text="@string/plus"
                     tools:layout_editor_absoluteX="83dp"
                     tools:layout_editor_absoluteY="368dp" />
 
@@ -176,20 +169,20 @@
                     android:id="@+id/zero"
                     style="@style/LizzyButtonsLong"
                     android:layout_width="match_parent"
-                    android:text="0" />
+                    android:text="@string/zero" />
 
                 <Button
                     android:id="@+id/decimal"
                     style="@style/LizzyButtonsNumber"
 
-                    android:text="."
+                    android:text="@string/decimal"
                     tools:layout_editor_absoluteX="250dp"
                     tools:layout_editor_absoluteY="417dp" />
 
                 <Button
                     android:id="@+id/equals"
                     style="@style/LizzyButtonsSideCommands"
-                    android:text="="
+                    android:text="@string/equals"
                     tools:layout_editor_absoluteX="155dp"
                     tools:layout_editor_absoluteY="86dp" />
 
@@ -212,7 +205,7 @@
         android:shadowColor="@color/md_theme_light_onBackground"
         android:shadowDx="15"
         android:shadowDy="20"
-        android:text="answer"
+        android:text="@string/answer"
         android:textSize="35sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></TextView>
